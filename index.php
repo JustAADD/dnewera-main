@@ -76,7 +76,7 @@
         <p class="text-lg mb-8 text-gray-700">Discover the perfect massage experience for you</p>
     </div>
 
-    <div class="grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 max-w-6xl mx-auto items-center justify-center">
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 max-w-6xl mx-auto items-center justify-center">
         <div class="treatment-card shadow-md h-full max-h-full p-6 bg-gray-100">
             <img src="src\img\swedish-massage.jpg" alt="Treatment 1" class="w-full h-48 object-cover rounded">
             <h3 class="text-xl font-semibold mt-4">Swedish Massage</h3>
