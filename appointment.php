@@ -15,16 +15,30 @@
 
 <body>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"
+        class="none fixed bottom-20 right-30 z-99 border-none outline-none bg-black hover:bg-green-700 cursor-pointer text-white font-bold py-2 px-4 rounded">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
     <!-- navbar section -->
     <section id="navbar"
         class="navbar w-screen h-20 bg-transparent shadow-lg fixed top-0 left-0 z-10 transition-colors duration-300">
         <div class="logo h-full w-full flex items-center justify-center">
-            <img src="./src/img/logo1 with name.png" alt="Logo" class="h-40">
+            <a href="index.php">
+                <img src="./src/img/logo1 with name.png" alt="Logo" class="h-40">
+            </a>
             <div class="nav-links h-full w-3/4 flex items-center justify-end space-x-8 pr-10">
-                <a href="#treatments"
-                    class="text-sm font-medium text-black hover:text-green-600 scroll-link">Treatments</a>
-                <a href="#sub-footer" class="text-sm font-medium text-black hover:text-green-600 scroll-link">Contact
-                    us</a>
+                <a href="index.php#treatments" onclick="location.href=this.href; return true;" class="text-sm font-medium text-black hover:text-green-600 scroll-link flex flex-row items-center
+                    gap-2">
+                    <i class="fa-solid fa-spa"></i>
+                    Treatments
+                </a>
+                <a href="index.php#sub-footer" onclick="location.href=this.href; return true;"
+                    class="text-sm font-medium text-black hover:text-green-600 scroll-link flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    Contact us
+                </a>
                 <button
                     class="px-4 py-2 bg-black text-white text-sm font-medium rounded hover:bg-green-700 transition">Book
                     now</button>
@@ -61,7 +75,7 @@
                     <label for="first-name" class="block text-sm/6 font-medium text-black">First name</label>
                     <div class="mt-2">
                         <input id="first-name" type="text" name="first-name" autocomplete="given-name"
-                            class="block w-full rounded-md px-4 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-gray  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                            class="block w-full rounded-md px-4 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-gray-300  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                     </div>
                 </div>
 
@@ -69,7 +83,7 @@
                     <label for="last-name" class="block text-sm/6 font-medium text-black">Last name</label>
                     <div class="mt-2">
                         <input id="last-name" type="text" name="last-name" autocomplete="family-name"
-                            class="block w-full rounded-md px-4 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-gray  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                            class="block w-full rounded-md px-4 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-gray-300  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                     </div>
                 </div>
 
@@ -77,7 +91,7 @@
                     <label for="email" class="block text-sm/6 font-medium text-black">Email address</label>
                     <div class="mt-2">
                         <input id="email" name="email" type="email" autocomplete="email"
-                            class="block w-full rounded-md px-4 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-gray  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
+                            class="block w-full rounded-md px-4 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-gray-300  placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500 sm:text-sm/6" />
                     </div>
                 </div>
 
@@ -85,7 +99,7 @@
                     <label for="phone-number" class="block text-sm/6 font-medium text-gray">Phone Number</label>
                     <div class="mt-2">
                         <input type="tel" id="phone-number" name="phone-number" autocomplete="tel"
-                            class="block w-full rounded-md px-4 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-gray placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-black sm:text-sm/6" />
+                            class="block w-full rounded-md px-4 py-1.5 text-base text-white outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-black sm:text-sm/6" />
                     </div>
                 </div>
 
@@ -132,18 +146,17 @@
             </div>
 
             <div class="mt-10 grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 px-4 gap-4">
-              <button type="submit"
-                    class="w-full h-12 col-span-1 bg-black text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-green-700 transition">Book an appointment</button>  
+                <button type="submit"
+                    class="w-full h-12 col-span-1 bg-black text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-green-700 transition">Book
+                    an appointment</button>
                 <button type="cancel"
-                    class="w-full h-12 col-span-1 bg-black text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-gray-300 transition">Cancel</button>  
+                    class="w-full h-12 col-span-1 bg-black text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-green-700  transition">Cancel</button>
             </div>
         </form>
     </div>
 
 
-
-
-
+    <!-- script js for navar section -->
     <script>
         window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
@@ -157,9 +170,35 @@
         });
     </script>
 
-     <div class="footer mt-20 h-12 w-full bg-[#1a1a1a] flex items-center justify-center">
+    <!-- footer -->
+    <div class="footer mt-20 h-12 w-full bg-[#1a1a1a] flex items-center justify-center">
         <p class="text-white text-xs">&copy; 2024 D'new era. All rights reserved.</p>
     </div>
+
+
+    <!-- script button -->
+    <script>
+       
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    </script>
 </body>
 
 </html>
