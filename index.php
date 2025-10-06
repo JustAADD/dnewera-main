@@ -175,28 +175,28 @@
 </script>
 
 <!-- script button -->
-<script>
+    <script>
+       
+        let mybutton = document.getElementById("myBtn");
+        
+        window.onscroll = function () { scrollFunction() };
 
-    let mybutton = document.getElementById("myBtn");
-
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
-    }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
+        // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     }
-</script>
+    </script>
 </body>
 
 </html>
