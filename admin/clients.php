@@ -21,9 +21,10 @@
         <div class="flex-1 flex flex-col">
 
             <main class="flex-1 p-6 bg-gray-100">
-                <h1 class="text-2xl font-bold mb-4">Admin Dashboard</h1>
-                <p>Welcome to the admin dashboard. Use the sidebar to navigate through different sections.</p>
-            
+                <div class="appointment-section">
+                    <h1 class="text-2xl font-bold mb-4">Clients</h1>
+                    <p>Manage your clients here. Use the sidebar to navigate through different sections.</p>
+                </div>
             </main>
 
 

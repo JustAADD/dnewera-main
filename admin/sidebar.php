@@ -23,32 +23,32 @@
             </div>
             <ul class="space-y-4 mt-10">
                 <li class="mb-2">
-                    <button onclick="window.location.href='Appointments.php'"
+                    <button onclick="window.location.href='admin.php'"
                         class="flex items-center text-gray-500 hover:text-white gap-2 w-full px-4 py-2 rounded transition-colors duration-200 hover:bg-green-700">
                         <i class="fas fa-home"></i>
                         <span>Dashboard</span>
                     </button>
                 </li>
                 <li class="mb-2">
-                    <button onclick="window.location.href='Appointments.php'"
+                    <button onclick="window.location.href='appointment.php'"
                         class="flex items-center text-gray-500 hover:text-white gap-2 w-full px-4 py-2 rounded transition-colors duration-200 hover:bg-green-700">
                         <i class="fas fa-calendar-alt mr-3"></i> <span>Appointments</span>
                     </button>
                 </li>
                 <li class="mb-2">
-                    <button onclick="window.location.href='Appointments.php'"
+                    <button onclick="window.location.href='clients.php'"
                         class="flex items-center text-gray-500 hover:text-white gap-2 w-full px-4 py-2 rounded transition-colors duration-200 hover:bg-green-700">
                         <i class="fas fa-users mr-3"></i> <span>Clients information</span>
                     </button>
                 </li>
                 <li class="mb-2">
-                    <button onclick="window.location.href='Appointments.php'"
+                    <button onclick="window.location.href='schedules.php'"
                         class="flex items-center text-gray-500 hover:text-white gap-2 w-full px-4 py-2 rounded transition-colors duration-200 hover:bg-green-700">
                         <i class="fas fa-clock mr-3"></i> <span>Schedules</span>
                     </button>
                 </li>
                 <li class="mb-4">
-                    <button onclick="window.location.href='Appointments.php'"
+                    <button onclick="window.location.href='payments.php'"
                         class="flex items-center text-gray-500 hover:text-white gap-2 w-full px-4 py-2 rounded transition-colors duration-200 hover:bg-green-700">
                         <i class="fas fa-credit-card mr-3"></i> <span>Payments</span>
                     </button>
@@ -59,13 +59,13 @@
                 <hr class="border-t border-gray-500 mb-4">
                 <ul class="space-y-4">
                     <li class="mb-2">
-                        <button onclick="window.location.href='Appointments.php'"
+                        <button onclick="window.location.href='settings.php'"
                             class="flex items-center text-gray-500 hover:text-white gap-2 w-full px-4 py-2 rounded transition-colors duration-200 hover:bg-green-700">
                             <i class="fas fa-cog mr-3"></i> <span>Settings</span>
                         </button>
                     </li>
                     <li>
-                        <button onclick="window.location.href='Appointments.php'"
+                        <button onclick="window.location.href='logout.php'"
                             class="flex items-center text-gray-500 hover:text-white gap-2 w-full px-4 py-2 rounded transition-colors duration-200 hover:bg-green-700">
                             <i class="fas fa-sign-out-alt mr-3"></i> <span>Log Out</span>
                         </button>

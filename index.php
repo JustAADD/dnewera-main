@@ -24,7 +24,7 @@
     class="navbar w-screen h-20 bg-transparent shadow-lg fixed top-0 left-0 z-10 transition-colors duration-300">
     <div class="logo h-full w-full flex items-center justify-center">
         <a href="index.php">
-            <img src="./src/img/logo1 with name.png" alt="Logo" class="h-40">
+            <img src="./src/img/logo1 with name.png" alt="Logo" class="h-20">
         </a>
         <div class="nav-links h-full w-3/4 flex items-center justify-end space-x-8 pr-10">
             <a href="#treatments"
