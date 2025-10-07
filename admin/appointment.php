@@ -20,31 +20,43 @@
 
         <div class="w-full">
 
-            <main class="w-full p-10 bg-gray-50">
-                <div class="appointment-section">
-                    <h1 class="text-2xl font-bold mb-4">Appointments</h1>
+            <main class="w-full h-screen p-10 bg-gray-50">
+                <div class="mb-10">
+                    <h1 class="text-2xl font-bold mb-5">Appointments</h1>
                     <p>Manage your appointments here. Use the sidebar to navigate through different sections.</p>
                 </div>
-                <div class="appointment-container flex justify-center items-center mt-10">
-                    <div class="w-full bg-white shadow-md rounded-md p-6">
-                        <table class="w-full border-separate border border-gray-500 border-spacing-2">
-                            <thead>
+                
+                <div class="w-full max-w-6xl h-100 bg-white shadow-md rounded-md p-6">
+                    <div class="max-h-screen overflow-y-auto">
+                        <table class="w-full  border border-gray-500 ">
+                            <thead class="sticky top-0 bg-gray-100">
                                 <tr>
-                                    <th class="border border-gray-300 ">Appointment ID</th>
-                                    <th class="border border-gray-300 ">Patient Name</th>
-                                    <th class="border border-gray-300 ">Date</th>
-                                    <th class="border border-gray-300 ">Time</th>
-                                    <th class="border border-gray-300 ">Status</th>
-                                    <th class="border border-gray-300 ">Actions</th>
+                                    <th class="border border-gray-300 w-1/5 p-2">Appointment ID</th>
+                                    <th class="border border-gray-300 w-1/5 p-2">Patient Name</th>
+                                    <th class="border border-gray-300 w-1/5 p-2">Date</th>
+                                    <th class="border border-gray-300 w-1/5 p-2">Time</th>
+                                    <th class="border border-gray-300 w-1/5 p-2">Status</th>
+                                    <th class="border border-gray-300 w-1/5 p-2 text-center">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Appointment rows go here. Populate dynamically via PHP or JavaScript. -->
+                                <!-- Appointment rows go here -->
+                                <td class="border border-gray-300 p-2">A001</td>
+                                <td class="border border-gray-300 p-2">John Doe</td>
+                                <td class="border border-gray-300 p-2">2024-07-01</td>
+                                <td class="border border-gray-300 p-2">10:00 AM</td>
+                                <td class="border border-gray-300 p-2">Confirmed</td>
+                                <td class="border border-gray-300 p-2 text-center">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </td>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </main>
+
         </div>
     </div>
 

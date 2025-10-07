@@ -17,7 +17,7 @@
     <div class="h-screen flex">
         <div class="bg-white w-64 p-6">
             <div class="flex justify-center mb-4">
-                <div class="overflow-hidden rounded-full w-20 h-20 flex items-center justify-center">
+                <div class="overflow-hidden rounded-full w-50 h-20 flex items-center justify-center">
                     <img src="../src/img/logo1 with name.png" alt="D NEW ERA Logo" class="object-cover w-full h-full scale-110">
                 </div>
             </div>
