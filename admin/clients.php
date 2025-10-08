@@ -18,15 +18,44 @@
 
         <?php include './sidebar.php'; ?>
 
-        <div class="flex-1 flex flex-col">
+        <div class="w-full">
 
-            <main class="flex-1 p-6 bg-gray-100">
-                <div class="appointment-section">
-                    <h1 class="text-2xl font-bold mb-4">Clients</h1>
-                    <p>Manage your clients here. Use the sidebar to navigate through different sections.</p>
+            <main class="w-full h-screen p-10 bg-gray-50">
+                <div class="mb-10">
+                    <h1 class="text-2xl font-bold mb-5">Clients information</h1>
+                    <p>Manage your appointments here. Use the sidebar to navigate through different sections.</p>
+                </div>
+
+                <div class="w-full max-w-6xl h-100 bg-white shadow-md rounded-md p-6">
+                    <div class="max-h-screen overflow-y-auto">
+                        <table class="w-full  border border-gray-500 ">
+                            <thead class="sticky top-0 bg-gray-100">
+                                <tr>
+                                    <th class="border border-gray-300 w-1/5 p-2">First name</th>
+                                    <th class="border border-gray-300 w-1/5 p-2">Last name</th>
+                                    <th class="border border-gray-300 w-1/5 p-2">Email</th>
+                                    <th class="border border-gray-300 w-1/5 p-2">Phone</th>
+                                    <th class="border border-gray-300 w-1/5 p-2">Date</th>
+                                    <th class="border border-gray-300 w-1/5 p-2 text-center">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Appointment rows go here -->
+                                <td class="border border-gray-300 p-2">John</td>
+                                <td class="border border-gray-300 p-2">Doe</td>
+                                <td class="border border-gray-300 p-2">dnewera@example.com</td>
+                                <td class="border border-gray-300 p-2">123-456-7890</td>
+                                <td class="border border-gray-300 p-2">2023-05-01</td>
+                                <td class="border border-gray-300 p-2 text-center">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </main>
-
 
         </div>
     </div>

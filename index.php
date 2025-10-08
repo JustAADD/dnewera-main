@@ -15,7 +15,7 @@
 </body>
 
 <button onclick="topFunction()" id="myBtn" title="Go to top"
-    class="none fixed bottom-20 right-30 z-99 border-none outline-none bg-black hover:bg-green-700 cursor-pointer text-white font-bold py-2 px-4 rounded">
+    class="none fixed right-10 bottom-10 z-99 border-none outline-none bg-black hover:bg-green-700 cursor-pointer text-white font-bold py-2 px-4 rounded">
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 
@@ -74,7 +74,7 @@
         <p class="text-lg mb-6">Your one-stop solution for all your wellness needs</p>
 
         <a href="appointment.php"
-            class="px-6 py-2 h-20 bg-black text-white text-sm font-medium rounded-full hover:bg-green-700 transition inline-flex items-center justify-center">
+            class="px-6 py-2 h-12 bg-black text-white text-sm font-medium rounded-full hover:bg-green-700 transition inline-flex items-center justify-center">
             Book an appointment now
         </a>
     </div>

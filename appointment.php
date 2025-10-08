@@ -16,13 +16,13 @@
 <body>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"
-        class="none fixed bottom-20 right-30 z-99 border-none outline-none bg-black hover:bg-green-700 cursor-pointer text-white font-bold py-2 px-4 rounded">
+        class="none fixed right-10 bottom-10 z-99 border-none outline-none bg-black hover:bg-green-700 cursor-pointer text-white font-bold py-2 px-4 rounded">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
 
     <!-- navbar section -->
-    <section id="navbar"
+    <section id="navbar" 
         class="navbar w-screen h-20 bg-transparent shadow-lg fixed top-0 left-0 z-10 transition-colors duration-300">
         <div class="logo h-full w-full flex items-center justify-center">
             <a href="index.php">

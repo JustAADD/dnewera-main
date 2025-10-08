@@ -14,11 +14,21 @@
 
 <body>
 
-    <div class="h-screen flex">
-        <div class="bg-white w-64 p-6">
+    <div class="sidebar h-screen flex">
+
+
+
+        <div
+            class="bg-white w-64 p-6 md:hidden fixed md:relative z-50 inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out shadow-lg md:shadow-none">
+
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
             <div class="flex justify-center mb-4">
                 <div class="overflow-hidden rounded-full w-50 h-20 flex items-center justify-center">
-                    <img src="../src/img/logo1 with name.png" alt="D NEW ERA Logo" class="object-cover w-full h-full scale-110">
+                    <img src="../src/img/logo1 with name.png" alt="D NEW ERA Logo"
+                        class="object-cover w-full h-full scale-110">
                 </div>
             </div>
             <ul class="space-y-4 mt-10">
@@ -58,12 +68,7 @@
             <div class="absolute bottom-20 left-0 w-64 px-6 pb-6">
                 <hr class="border-t border-gray-500 mb-4">
                 <ul class="space-y-4">
-                    <li class="mb-2">
-                        <button onclick="window.location.href='settings.php'"
-                            class="flex items-center text-gray-500 hover:text-white gap-2 w-full px-4 py-2 rounded transition-colors duration-200 hover:bg-green-700">
-                            <i class="fas fa-cog mr-3"></i> <span>Settings</span>
-                        </button>
-                    </li>
+
                     <li>
                         <button onclick="window.location.href='logout.php'"
                             class="flex items-center text-gray-500 hover:text-white gap-2 w-full px-4 py-2 rounded transition-colors duration-200 hover:bg-green-700">
@@ -75,7 +80,15 @@
 
         </div>
     </div>
+    
+    <script>
+        const sidebar = document.getElementById("sidebar");
+        const menuBtn = document.getElementById("menu-btn");
 
+        menuBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("-translate-x-full");
+        });
+    </script>
 </body>
 
 </html>
