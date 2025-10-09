@@ -1,3 +1,8 @@
+<?php
+require '../connect/db.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,15 +47,28 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Appointment rows go here -->
-                                <td class="border border-gray-300 p-2">A001</td>
-                                <td class="border border-gray-300 p-2">John Doe</td>
-                                <td class="border border-gray-300 p-2">2024-07-01</td>
-                                <td class="border border-gray-300 p-2">10:00 AM</td>
-                                <td class="border border-gray-300 p-2">Confirmed</td>
-                                <td class="border border-gray-300 p-2 text-center">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                </td>
+
+                                <?php
+                                $sql = "SELECT * FROM appointment_data";
+                                $result = $mysqli->query($sql);
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo "<tr>";
+                                        echo "<td class='border border-gray-300 p-2'>" . $row['id'] . "</td>";
+                                        echo "<td class='border border-gray-300 p-2'>" . $row['first_name'] . "</td>";
+                                        echo "<td class='border border-gray-300 p-2'>" . $row['pref_app_date'] . "</td>";
+                                        echo "<td class='border border-gray-300 p-2'>" . $row['pref_app_time'] . "</td>";
+                                        echo "<td class='border border-gray-300 p-2'>" . $row['payment_method'] . "</td>";
+                                        echo "<td class='border border-gray-300 p-2 text-center'>
+                                                <i class='fa-solid fa-pen-to-square'></i>
+                                              </td>";
+                                        echo "</tr>";
+                                    }
+                                } else {
+                                    echo "<tr><td colspan='6' class='border border-gray-300 p-2 text-center'>No appointments found</td></tr>";
+                                } 
+                                $mysqli->close();
+                                ?>
                             </tbody>
                         </table>
                     </div>
