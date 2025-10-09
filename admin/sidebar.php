@@ -15,13 +15,10 @@
 <body>
 
     <div class="sidebar h-screen flex">
-
-
-
         <div
-            class="bg-white w-64 p-6 md:hidden fixed md:relative z-50 inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out shadow-lg md:shadow-none">
+            class="bg-white w-64 p-6  fixed md:relative z-50 inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out shadow-lg md:shadow-none">
 
-            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none xl:hidden">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
 
@@ -80,7 +77,7 @@
 
         </div>
     </div>
-    
+
     <script>
         const sidebar = document.getElementById("sidebar");
         const menuBtn = document.getElementById("menu-btn");
